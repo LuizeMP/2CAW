@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+<title> Formulário soma </title>
+
+</head>
+
+ <script language="JavaScript">
+
+function calcula(form) {
+
+    var soma = eval(form.campo1.value) + eval(form.campo2.value);
+
+    form.resultado.value = soma;
+
+}
+function Divide2(form) {
+
+  var divide2 = eval(form.resultado.value) / 2;
+
+    form.parcela2.value = divide2;
+
+}
+   
+   function Divide3(form) {
+
+  var divide3 = eval(form.resultado.value) / 3;
+
+    form.parcela3.value = divide3;
+
+}
+</script>
+
+  CALCULA PARCELAS:
+  
+  <body>
+
+<form>
+<br>
+  Valor Compra 1: <input type = "text" name = "campo1" /><p/>
+
+  Valor Compra 2: <input type = "text" name = "campo2" /><p/>
+
+  
+<input type = "button" value = "Valor Total à vista" onClick="calcula(this.form)" />
+
+  : <input type = "text" name = "resultado" /> <br>
+  
+ 
+  
+<br>  <input type = "button" value = "Parcelado 2x" onClick="Divide2(this.form)" />
+  
+  : <input type = "text" name = "parcela2" /> <br>
+  
+
+  <br>  <input type = "button" value = "Parcelado 3x" onClick="Divide3(this.form)" />
+  
+  : <input type = "text" name = "parcela3" /> <br/>
+
+  <br> <input type = "reset" value = "Limpar" /><p/>
+  
+</form>
+
+</body>
+
+</html>
